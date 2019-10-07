@@ -1,0 +1,55 @@
+@title umutbeedir Office 2016 Etkinlestirme Araci
+@if not %~n0 == keamlist1881-office2016 GOTO kopya
+@echo umutbeedir Office 2016 etkinlestirme araci baslatiliyor.
+@ping 127.0.0.1 -n 4 > nul
+@echo .
+@ping 127.0.0.1 -n 4 > nul
+@echo .
+@ping 127.0.0.1 -n 4 > nul
+@echo .
+@ping 127.0.0.1 -n 4 > nul
+@IF EXIST "\Program Files (x86)\Microsoft Office\Office16" (CD "\Program Files (x86)\Microsoft Office\Office16")
+@IF EXIST "\Program Files\Microsoft Office\Office16" (CD \Program Files\Microsoft Office\Office16)
+@cscript ospp.vbs /act
+@findstr /n /i /c:"Product activation successful" * > nul
+@if %errorlevel% == 0 (GOTO basarili) ELSE (GOTO ikincideneme)
+: successfully 
+@echo .
+@echo .
+@echo .
+@echo Office keygen patched & echo Please follow me instagram account. ig:umutbeedir :)
+@explorer "http://www.teknoustam.com/teknoustam.php?ara=office2016"
+@pause >nul 
+@GOTO son
+:ikincideneme
+@echo .
+@echo .
+@echo .
+@echo Etkinlestirme islemi sirasinda hata ile karsilasildi.& echo.Ikinci etkinlestirme metodu uygulanacak.
+@ping 127.0.0.1 -n 2 > nul
+@echo .
+@ping 127.0.0.1 -n 2 > nul
+@echo .
+@ping 127.0.0.1 -n 2 > nul
+@echo .
+@ping 127.0.0.1 -n 2 > nul
+@CD "\Program Files (x86)\Microsoft Office\Office16"
+@cscript ospp.vbs /act 
+@findstr /n /i /c:"Product activation successful" * > nul
+@if %errorlevel% == 0 (GOTO basarili) ELSE (GOTO basarisiz)
+:basarisiz
+@echo .
+@echo .
+@echo .
+@echo Office 2016 etkinlestirme islemi tamamlanamadi. Sitemizdeki makaleye yorum yaparak yardim alabilirsiniz.
+@explorer "http://www.teknoustam.com/teknoustam.php?ara=office2016"
+@pause >nul
+:son
+@Exit
+:kopya
+@echo .
+@echo .
+@echo 
+@echo Indirdiginiz yazilimin uzerinde degisiklik yapilmis.& echo.Lutfen acilacak siteden orjinal dosyayi indirin.
+@explorer "http://www.teknoustam.com/teknoustam.php?ara=office2016"
+@pause >nul
